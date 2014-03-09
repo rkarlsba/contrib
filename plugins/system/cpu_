@@ -85,7 +85,7 @@ fi
 
 emit_values()
 {
-	while read key user nice system idle iowait irq softirq steal guest guest_nice
+	while read key user nice system idle iowait irq softirq steal guest guest_nice unused
 	do
 		[ "$key" != "$1" ] && continue
 		cat <<EOF
